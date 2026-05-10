@@ -76,7 +76,7 @@ button {
 .logo-link {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     color: var(--ink);
     font-family: Outfit, Inter, sans-serif;
     font-size: 26px;
@@ -85,14 +85,34 @@ button {
 }
 
 .logo-mark {
-    width: 44px;
-    height: 44px;
-    display: inline-grid;
-    place-items: center;
-    color: #fff;
-    background: var(--blue);
-    border-radius: 8px;
-    font-size: 18px;
+    width: 54px;
+    height: 54px;
+    flex: 0 0 auto;
+    filter: drop-shadow(0 8px 18px rgba(59, 141, 204, 0.22));
+}
+
+.logo-mark-bg {
+    fill: var(--ink);
+}
+
+.logo-mark-primary {
+    fill: var(--blue);
+}
+
+.logo-mark-secondary {
+    fill: #fff;
+    opacity: 0.94;
+}
+
+.logo-mark-line {
+    fill: none;
+    stroke: #8fd0ff;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.logo-mark-dot {
+    fill: #8fd0ff;
 }
 
 .site-nav {
@@ -417,9 +437,8 @@ button {
     }
 
     .logo-mark {
-        width: 34px;
-        height: 34px;
-        font-size: 14px;
+        width: 40px;
+        height: 40px;
     }
 
     .menu-btn {
