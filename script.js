@@ -18,7 +18,7 @@ siteNav.addEventListener("click", (event) => {
     menuButton.setAttribute("aria-expanded", "false");
 });
 
-if (localStorage.getItem("datamonks-cookie-choice")) {
+if (localStorage.getItem("bangbyte-cookie-choice")) {
     cookieNotice.classList.add("is-hidden");
 }
 
@@ -29,6 +29,6 @@ cookieNotice.addEventListener("click", (event) => {
         return;
     }
 
-    localStorage.setItem("datamonks-cookie-choice", choice);
+    localStorage.setItem("bangbyte-cookie-choice", choice);
     cookieNotice.classList.add("is-hidden");
 });

@@ -73,9 +73,26 @@ button {
     gap: 40px;
 }
 
-.logo-link img {
-    width: 220px;
-    height: auto;
+.logo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--ink);
+    font-family: Outfit, Inter, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.logo-mark {
+    width: 44px;
+    height: 44px;
+    display: inline-grid;
+    place-items: center;
+    color: #fff;
+    background: var(--blue);
+    border-radius: 8px;
+    font-size: 18px;
 }
 
 .site-nav {
@@ -395,8 +412,14 @@ button {
         padding: 16px;
     }
 
-    .logo-link img {
-        width: 116px;
+    .logo-link {
+        font-size: 18px;
+    }
+
+    .logo-mark {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
     }
 
     .menu-btn {
